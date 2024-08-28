@@ -1,7 +1,7 @@
 from itertools import zip_longest
 
 
-def gendiff(file1: str, file2: str) -> str:
+def gendiff(file1: str, file2: str) -> str:   # noqa
     with (
         open(file1, 'r') as f1,
         open(file2, 'r') as f2,
