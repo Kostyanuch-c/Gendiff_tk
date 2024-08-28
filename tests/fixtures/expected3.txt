@@ -1,0 +1,34 @@
+Hello from Hexlet Python is awesome Python is awesome
+Python is awesome Python also is a snake
+>>>file1>>>
+Hello from Hexlet Python is awesome Python is awesome
+Python is awesome Python also is a snake
+
+
+Python is awesome Python also is a snake
+And also a comedy show
+============
+And as a snake
+s a snake
+Hello from Hexlet
+And also a comedy sh
+
+Python is a snake
+<<<file2<<<
+Python also is a snake
+>>>file1>>>
+Use Force
+Python is awesome Python also is a snake
+
+============
+And also a comedy show
+Use context managers
+Python is awesome Python also is a snake
+<<<file2<<<
+>>>file1>>>
+
+
+============
+And also a comedy show
+Use context managers
+<<<file2<<<

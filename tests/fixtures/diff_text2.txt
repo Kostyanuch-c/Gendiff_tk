@@ -1,0 +1,16 @@
+Hello from Hexlet Python is awesome Python is awesome
+Python is awesome Python also is a snake
+
+And as a snake
+s a snake
+Hello from Hexlet
+And also a comedy sh
+
+Python is a snake
+Python also is a snake
+And also a comedy show
+Use context managers
+Python is awesome Python also is a snake
+
+And also a comedy show
+Use context managers

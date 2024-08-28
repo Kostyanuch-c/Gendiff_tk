@@ -1,0 +1,5 @@
+Hello from Hexlet
+Python is awesome
+Python also is a snake
+And also a comedy show
+Use context managers

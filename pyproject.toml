@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "gendiff"
+version = "0.1.0"
+description = ""
+authors = ["Konstantin Kiselev <konstantin.kiselev.1998@mail.ru>"]
+readme = "README.md"
+packages = [
+    { include = "gendiff_tk" },
+]
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+gendiff = "gendiff_tk.scripts.main:main"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+pytest-cov = "^5.0.0"
+pytest = "^8.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
