@@ -2,6 +2,11 @@ from unittest import mock
 import pytest
 import tkinter as tk
 from gendiff_tk.scripts import main
+import os
+
+if os.environ.get('DISPLAY', '') == '':
+    print('no display found. Using :0.0')
+    os.environ.__setitem__('DISPLAY', ':0.0')
 
 
 @pytest.fixture
@@ -56,7 +61,6 @@ def test_update_status(diff_app):
     test_text = "New Status"
     diff_app.update_status(mock_label, test_text)
     mock_label.config.assert_called_once_with(text=test_text)
-
 
 # def test_update_diff_success(diff_app, monkeypatch):
 #     diff_app.file1 = "tests/fixtures/text1.txt"
