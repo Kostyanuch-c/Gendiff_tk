@@ -3,7 +3,6 @@ from tkinter.scrolledtext import ScrolledText
 from tkinter import messagebox as mb
 from tkinter import filedialog as fd
 from gendiff_tk.gendiff import gendiff
-import os
 
 
 class DiffApp:
@@ -109,9 +108,6 @@ class DiffApp:
 
 
 if __name__ == "__main__":
-    if os.environ.get('DISPLAY', '') == '':
-        print('no display found. Using :0.0')
-        os.environ.__setitem__('DISPLAY', ':0.0')
     root = tk.Tk()
     app = DiffApp(root)
     app.run()
