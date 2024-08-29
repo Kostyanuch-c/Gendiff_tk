@@ -1,5 +1,4 @@
 from pathlib import Path
-import pytest
 from gendiff_tk import gendiff
 
 
@@ -39,6 +38,15 @@ def test_diff_lengths():
     file1 = get_path('diff_text1.txt')
     file2 = get_path('diff_text2.txt')
     expected = get_path('expected3.txt')
+
+    result = gendiff.gendiff(file1, file2)
+    assert open(expected).read() == result
+
+
+def test_same_text():
+    file1 = get_path('text1.txt')
+    file2 = get_path('text1.txt')
+    expected = get_path('expected_same.txt')
 
     result = gendiff.gendiff(file1, file2)
     assert open(expected).read() == result
