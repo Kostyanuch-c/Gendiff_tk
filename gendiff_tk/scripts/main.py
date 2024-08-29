@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter.scrolledtext import ScrolledText
 from tkinter import messagebox as mb
 from tkinter import filedialog as fd
-from gendiff import gendiff
+from gendiff_tk.gendiff import gendiff
 
 
 class DiffApp:
