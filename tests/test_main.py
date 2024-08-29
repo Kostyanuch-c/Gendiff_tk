@@ -4,13 +4,14 @@ import tkinter as tk
 from gendiff_tk.scripts import main
 import os
 
-if os.environ.get('DISPLAY', '') == '':
-    print('no display found. Using :0.0')
-    os.environ.__setitem__('DISPLAY', ':0.0')
+
 
 
 @pytest.fixture
 def diff_app():
+    if os.environ.get('DISPLAY', '') == '':
+        print('no display found. Using :0.0')
+        os.environ.__setitem__('DISPLAY', ':0.0')
     root = tk.Tk()
     app = main.DiffApp(root)
     return app
