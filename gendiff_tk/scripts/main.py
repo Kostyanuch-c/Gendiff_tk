@@ -6,7 +6,7 @@ from gendiff_tk.gendiff import gendiff
 
 
 class DiffApp:
-    def __init__(self, root: tk.Tk, width=750, height=700):
+    def __init__(self, root, width=750, height=700):
         self.root = root
         self.root.title('MyDiffTXT')
         self.root.geometry(f"{width}x{height}")
