@@ -8,7 +8,6 @@ from gendiff_tk.scripts import main
 def diff_app():
     root = tk.Tk()
     app = main.DiffApp(root)
-
     return app
 
 
