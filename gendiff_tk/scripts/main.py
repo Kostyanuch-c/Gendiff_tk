@@ -5,10 +5,6 @@ from tkinter import filedialog as fd
 from gendiff_tk.gendiff import gendiff
 import os
 
-if os.environ.get('DISPLAY', '') == '':
-    print('no display found. Using :0.0')
-    os.environ.__setitem__('DISPLAY', ':0.0')
-
 
 class DiffApp:
     def __init__(self, root, width=750, height=700):
@@ -113,6 +109,9 @@ class DiffApp:
 
 
 if __name__ == "__main__":
+    if os.environ.get('DISPLAY', '') == '':
+        print('no display found. Using :0.0')
+        os.environ.__setitem__('DISPLAY', ':0.0')
     root = tk.Tk()
     app = DiffApp(root)
     app.run()
