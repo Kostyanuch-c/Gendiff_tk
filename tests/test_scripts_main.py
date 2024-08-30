@@ -57,15 +57,9 @@ def test_update_status(diff_app):
     diff_app.update_status(mock_label, test_text)
     mock_label.config.assert_called_once_with(text=test_text)
 
-# def test_update_diff_success(diff_app, monkeypatch):
-#     diff_app.file1 = "tests/fixtures/text1.txt"
-#     diff_app.file2 = "tests/fixtures/text2.txt"
-#     mock_diff_result = ("diff result\n"
-#                         "\n")
-#     monkeypatch.setattr('gendiff_tk.gendiff.gendiff', lambda file1, file2: mock_diff_result)
-#     with mock.patch.object(diff_app.result_text, 'delete') as mock_delete, \
-#             mock.patch.object(diff_app.result_text, 'insert') as mock_insert:
-#         diff_app.update_diff()
-#
-#         mock_delete.assert_called_once_with(1.0, tk.END)
-#         mock_insert.assert_called_once_with(tk.END, mock_diff_result)
+
+def test_ask_exit_app(diff_app, monkeypatch):
+    monkeypatch.setattr('tkinter.messagebox.askyesno', lambda title, message: True)
+    with mock.patch.object(diff_app.root, 'destroy') as mock_destroy:
+        diff_app.exit_app()
+        mock_destroy.assert_called_once()

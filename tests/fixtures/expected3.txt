@@ -1,5 +1,5 @@
-Hello from Hexlet Python is awesome Python is awesome
-Python is awesome Python also is a snake
+Hello from Hexlet Python is awesome Python is awesome  (Строка в файлах совпадает)
+Python is awesome Python also is a snake  (Строка в файлах совпадает)
 >>>file1>>>
 Hello from Hexlet Python is awesome Python is awesome
 Python is awesome Python also is a snake
@@ -15,7 +15,7 @@ And also a comedy sh
 
 Python is a snake
 <<<file2<<<
-Python also is a snake
+Python also is a snake  (Строка в файлах совпадает)
 >>>file1>>>
 Use Force
 Python is awesome Python also is a snake

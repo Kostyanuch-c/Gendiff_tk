@@ -3,7 +3,7 @@ Hello World
 ============
 Hello from Hexlet
 <<<file2<<<
-Python is awesome
+Python is awesome  (Строка в файлах совпадает)
 >>>file1>>>
 And also a comedy show
 Python also is a snake

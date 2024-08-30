@@ -1,5 +1,5 @@
-Hello World
-Python is awesome
-And also a comedy show
-Python also is a snake
-Use Force
+Hello World  (Строка в файлах совпадает)
+Python is awesome  (Строка в файлах совпадает)
+And also a comedy show  (Строка в файлах совпадает)
+Python also is a snake  (Строка в файлах совпадает)
+Use Force  (Строка в файлах совпадает)
